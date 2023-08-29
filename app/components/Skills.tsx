@@ -3,19 +3,20 @@ export default function Skills() {
     <section className="text-center">
       <div>
         <h3 className="text-4xl text-center font-extrabold text-gray-900 dark:text-gray-100">Skill Set👓</h3>
-        <ul className="max-w-3xl mx-auto pt-5 text-xl leading-7 text-gray-800 dark:text-gray-100">
-          <li key="pro">
-            {/* Software: Proficient - JavaScript, HTML5, CSS3, TypeScript, React, Redux, Vue, Vuex, Bootstrap, Git, */}
-            <span className="flex">Software(Proficient):</span>
-            <span className="flex">JavaScript, HTML5, CSS3, TypeScript, React, Redux, Vue, Vuex, Bootstrap, Git.</span>
+        <ul className="max-w-3xl mx-auto pt-5 text-xl text-left leading-7 text-gray-800 dark:text-gray-100">
+          <li key="pro" className="mt-2 lg:flex lg:justify-between lg:gap-x-2">
+            <span className="w-full lg:w-1/4">Software(Proficient): </span>
+            <span className="w-full lg:w-3/4">
+              JavaScript, HTML5, CSS3, TypeScript, React, Redux, Vue, Vuex, Bootstrap, Git.
+            </span>
           </li>
-          <li key="fam" className="flex">
-            <span>Software(Familiar):</span>
-            <span>Node.JS, Express, Next.js, TanStack, Prisma, PostgreSQL.</span>
+          <li key="fam" className="mt-2 lg:flex lg:justify-between lg:gap-x-2">
+            <span className="w-full lg:w-1/4">Software(Familiar): </span>
+            <span className="w-full lg:w-3/4">Node.JS, Express, Next.js, TanStack, Prisma, PostgreSQL.</span>
           </li>
-          <li key="lan" className="flex">
-            <span>Languages:</span>
-            <span>Fluent in English, Cantonese, and Mandarin.</span>
+          <li key="lan" className="mt-2 lg:flex lg:justify-between lg:gap-x-2">
+            <span className="w-full lg:w-1/4">Languages: </span>
+            <span className="w-full lg:w-3/4">Fluent in English, Cantonese, and Mandarin.</span>
           </li>
         </ul>
       </div>
