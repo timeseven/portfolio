@@ -46,12 +46,12 @@ export default function ProjectExperience() {
       <div className="flex justify-between flex-col p-5 sm:mx-[5.55555%] xl:mx-[11.1111%]">
         {projData.map((item) => {
           return (
-            <div key={item.id} className="flex sm:justify-between items-center flex-col p-10 md:flex-row-reverse">
+            <div key={item.id} className="flex sm:justify-between items-center flex-col pb-10 md:flex-row-reverse">
               <div className="w-full md:w-2/5 lg:pr-[5%] flex flex-col">
                 <h2 className="mt-0 text-center md:text-left text-2xl leading-7 md:text-[32px] md:leading-tight font-extrabold mb-4 text-gray-900 dark:text-white">
                   {item.projectName}
                 </h2>
-                <p className="leading-7 mb-3 text-center md:text-left md:text-xl md:leading-8 text-gray-700 dark:text-white">
+                <p className="leading-7 mb-3 text-left text-xl md:leading-8 text-gray-700 dark:text-white">
                   {item.projectIntro}
                 </p>
                 {item.githubLink &&

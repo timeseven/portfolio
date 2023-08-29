@@ -3,7 +3,7 @@ export default function WorkExperience() {
     <section className="bg-no-repeat bg-cover bg-center">
       <div className="text-4xl text-center font-extrabold text-gray-900 dark:text-gray-100">Relevant Experience💼</div>
       <div className="px-5 sm:mx-[5.55555%] xl:mx-[11.1111%] pt-12 pb-12">
-        <div className="px-5">
+        <div>
           <div className="mb-4">
             <div className="flex justify-center items-center">
               <span className="text-lg font-extrabold uppercase inline-block min-w-[120px] text-center text-sky-500 dark:text-sky-400">
@@ -19,7 +19,7 @@ export default function WorkExperience() {
               Front End Developer
             </h2>
           </div>
-          <p className="text-base max-w-5xl mx-auto text-center leading-6 sm:text-xl sm:leading-8 text-gray-700 dark:text-white">
+          <p className="text-base max-w-5xl mx-auto text-left leading-6 text-gray-700 dark:text-white">
             I developed web apps using HTML, JavaScript, and Vue based on UX designs, collaborated with teams for
             product success, managed daily site maintenance, and used Gitlab for workflow and version control.
           </p>
