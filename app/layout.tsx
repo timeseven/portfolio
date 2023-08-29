@@ -1,5 +1,3 @@
-"use client";
-import { useState } from "react";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -12,7 +10,6 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const [darkMode, setDarkMode] = useState(true);
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
