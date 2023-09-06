@@ -7,12 +7,13 @@ export default function Skills() {
           <li key="pro" className="mt-2 lg:flex lg:justify-between lg:gap-x-4">
             <span className="w-full lg:w-1/4">Software(Proficient): </span>
             <span className="w-full lg:w-3/4">
-              JavaScript, HTML5, CSS3, TypeScript, React, Redux, Vue, Vuex, Bootstrap, Tailwind CSS, Git, Webpack.
+              JavaScript, HTML5, CSS3, TypeScript, React, Redux, Vue, Vuex, Next.js, Bootstrap, Tailwind CSS, Git,
+              Webpack.
             </span>
           </li>
           <li key="fam" className="mt-2 lg:flex lg:justify-between lg:gap-x-4">
             <span className="w-full lg:w-1/4">Software(Familiar): </span>
-            <span className="w-full lg:w-3/4">Node.JS, Express, Next.js, TanStack, Prisma, PostgreSQL.</span>
+            <span className="w-full lg:w-3/4">Node.JS, Express, TanStack, Prisma, PostgreSQL.</span>
           </li>
           <li key="lan" className="mt-2 lg:flex lg:justify-between lg:gap-x-4">
             <span className="w-full lg:w-1/4">Languages: </span>
