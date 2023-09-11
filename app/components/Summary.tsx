@@ -33,10 +33,10 @@ export default function Summary({ darkMode, setDarkMode }: SummaryProps) {
       </nav>
       <div className="text-center p-10">
         <h2 className="text-5xl py-2 text-cyan-600 dark:text-purple-600 font-medium md:text-6xl">Even Qian</h2>
-        <h3 className="text-2xl py-2 text-gray-800 dark:text-gray-100">Front End Web Developer</h3>
+        <h3 className="text-2xl py-2 text-gray-800 dark:text-gray-100">Web Developer</h3>
         <p className="text-xl max-w-xl mx-auto text-left py-5 leading-8  text-gray-800 dark:text-gray-100">
           I like to build amazing web applications using HTML5, CSS3 and JavaScript. Also, I am a big fan of TypeScript,
-          React.JS and Tailwind CSS.
+          React.js, Tailwind CSS and Node.js.
         </p>
       </div>
       <div className="text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-gray-100">

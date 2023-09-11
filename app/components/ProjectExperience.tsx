@@ -1,33 +1,44 @@
 import { BsLink45Deg } from "react-icons/bs";
 import Image from "next/image";
-import proj1 from "../../public/post.jpg";
-import proj2 from "../../public/homepage.jpg";
-import proj3 from "../../public/crawler.jpg";
+import proj1 from "../../public/ebayclone.jpg";
+import proj2 from "../../public/post.jpg";
+import proj3 from "../../public/homepage.jpg";
+import proj4 from "../../public/crawler.jpg";
 
 export default function ProjectExperience() {
   const projData = [
     {
       id: 1,
-      projectName: "Live Posting and Commenting System",
+      projectName: "Ebay Clone",
       projectIntro:
-        "A full stack posting and commenting system using NextJS, TanStack React Query between client and server, Prisma and PostgreSQL for creating and accessing database, and authentication with Next Auth.",
-      githubLink: [{ name: "Github Repo", link: "https://github.com/timeseven/easy-post" }],
-      demoLink: "https://easy-post-eosin.vercel.app/",
-      skills: ["NextJS", "Tanstack", "Prisma", "PostgreSQL", "Next Auth"],
+        "Built an Ebay clone website to allow users to login, browse products, add products to cart, add/modify address, checkout and show purchased orders.",
+      githubLink: [{ name: "Github Repo", link: "https://github.com/timeseven/ebay-clone" }],
+      demoLink: "https://even-ebay-clone.vercel.app/",
+      skills: ["Next.js", "React.js", "Prisma", "PostgreSQL", "Supabase", "Stripe"],
       projectImg: proj1,
     },
     {
       id: 2,
+      projectName: "Live Posting and Commenting System",
+      projectIntro:
+        "A full stack posting and commenting system using Next.js, TanStack React Query between client and server, Prisma and PostgreSQL for creating and accessing database, and authentication with Next Auth.",
+      githubLink: [{ name: "Github Repo", link: "https://github.com/timeseven/easy-post" }],
+      demoLink: "https://easy-post-eosin.vercel.app/",
+      skills: ["Next.js", "Tanstack", "Prisma", "PostgreSQL", "Next Auth"],
+      projectImg: proj2,
+    },
+    {
+      id: 3,
       projectName: "Global News Administration System",
       projectIntro:
         "A comprehensive global news admin system with features including access management, data analysis, user roles, and news publication using React and Ant Design.",
       githubLink: [{ name: "Github Repo", link: "https://github.com/timeseven/press-admin" }],
       demoLink: "https://press-admin.netlify.app/",
       skills: ["React", "React Router", "Redux", "Ant Design"],
-      projectImg: proj2,
+      projectImg: proj3,
     },
     {
-      id: 3,
+      id: 4,
       projectName: "Basic Web Crawler",
       projectIntro:
         "A web crawler to navigate a specific website, utilizing Puppeteer to extract titles and text, then display the data on a webpage. Involved in both frontend and backend development",
@@ -37,7 +48,7 @@ export default function ProjectExperience() {
       ],
       demoLink: "",
       skills: ["React", "TypeScript", "Node.js", "RESTful APIs", "Express", "Echarts"],
-      projectImg: proj3,
+      projectImg: proj4,
     },
   ];
   return (

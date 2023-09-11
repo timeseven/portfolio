@@ -19,7 +19,7 @@ export default function WorkExperience() {
               Front End Developer
             </h2>
           </div>
-          <p className="text-base max-w-5xl mx-auto text-left leading-6 text-gray-700 dark:text-white">
+          <p className="text-lg max-w-5xl mx-auto text-left leading-6 text-gray-700 dark:text-white">
             I developed web apps using HTML, JavaScript, and Vue based on UX designs, collaborated with teams for
             product success, managed daily site maintenance, and used Gitlab for workflow and version control.
           </p>
