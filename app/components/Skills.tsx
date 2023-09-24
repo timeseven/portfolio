@@ -22,7 +22,7 @@ export default function Skills() {
           </li>
           <li key="tools" className="mt-2 lg:flex lg:justify-between lg:gap-x-4">
             <span className="w-full lg:w-1/4">Tools: </span>
-            <span className="w-full lg:w-3/4">AWS, Git, Webpack, Jenkins</span>
+            <span className="w-full lg:w-3/4">AWS, Git, Webpack, Docker, Jenkins</span>
           </li>
         </ul>
       </div>
