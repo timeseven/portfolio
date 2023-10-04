@@ -6,7 +6,7 @@ import HorizontalRule from "./components/HorizontalRule";
 import Summary from "./components/Summary";
 import Skills from "./components/Skills";
 import WorkExperience from "./components/WorkExperience";
-import Education from "./components/Educstion";
+import Education from "./components/Education";
 import Contact from "./components/Contact";
 
 export default function Home() {
@@ -25,12 +25,12 @@ export default function Home() {
         <Skills />
         {/* horizontal rule */}
         <HorizontalRule />
-        {/* Projects */}
-        <ProjectExperience />
-        {/* horizontal rule */}
-        <HorizontalRule />
         {/* work experience */}
         <WorkExperience />
+        {/* horizontal rule */}
+        <HorizontalRule />
+        {/* Projects */}
+        <ProjectExperience />
         {/* horizontal rule */}
         <HorizontalRule />
         {/* Education */}

@@ -10,7 +10,7 @@ export default function Skills() {
           </li>
           <li key="fe" className="mt-2 lg:flex lg:justify-between lg:gap-x-4">
             <span className="w-full lg:w-1/4">Front End: </span>
-            <span className="w-full lg:w-3/4">HTML5, CSS3, React, Redux, Next.js, Tailwind CSS</span>
+            <span className="w-full lg:w-3/4">React, Redux, Tailwind CSS, Bootstrap, Next.js, HTML5, CSS3</span>
           </li>
           <li key="be" className="mt-2 lg:flex lg:justify-between lg:gap-x-4">
             <span className="w-full lg:w-1/4">Back End: </span>
@@ -18,7 +18,7 @@ export default function Skills() {
           </li>
           <li key="db" className="mt-2 lg:flex lg:justify-between lg:gap-x-4">
             <span className="w-full lg:w-1/4">DB: </span>
-            <span className="w-full lg:w-3/4">SQL, PostgreSQL, MongoDB</span>
+            <span className="w-full lg:w-3/4">SQL, MongoDB, PostgreSQL</span>
           </li>
           <li key="tools" className="mt-2 lg:flex lg:justify-between lg:gap-x-4">
             <span className="w-full lg:w-1/4">Tools: </span>
