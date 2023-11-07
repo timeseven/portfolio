@@ -6,23 +6,33 @@ export default function Skills() {
         <ul className="max-w-3xl mx-auto p-4 text-xl text-left leading-7 text-gray-800 dark:text-gray-100">
           <li key="lan" className="mt-2 lg:flex lg:justify-between lg:gap-x-4">
             <span className="w-full lg:w-1/4">Languages: </span>
-            <span className="w-full lg:w-3/4">JavaScript, TypeScript</span>
+            <span className="w-full lg:w-3/4">
+              <strong>JavaScript, TypeScript</strong>
+            </span>
           </li>
           <li key="fe" className="mt-2 lg:flex lg:justify-between lg:gap-x-4">
             <span className="w-full lg:w-1/4">Front End: </span>
-            <span className="w-full lg:w-3/4">React, Redux, Tailwind CSS, Bootstrap, Next.js, HTML5, CSS3</span>
+            <span className="w-full lg:w-3/4">
+              <strong>React, Redux, Tailwind CSS,</strong> React Native, Bootstrap, Next.js, HTML5, CSS3
+            </span>
           </li>
           <li key="be" className="mt-2 lg:flex lg:justify-between lg:gap-x-4">
             <span className="w-full lg:w-1/4">Back End: </span>
-            <span className="w-full lg:w-3/4">Node.js, Express, Restful API, TanStack, Prisma</span>
+            <span className="w-full lg:w-3/4">
+              <strong>Node.js, Express,</strong> Restful API, NestJS, GraphQL, Prisma, TanStack
+            </span>
           </li>
           <li key="db" className="mt-2 lg:flex lg:justify-between lg:gap-x-4">
             <span className="w-full lg:w-1/4">DB: </span>
-            <span className="w-full lg:w-3/4">SQL, MongoDB, PostgreSQL</span>
+            <span className="w-full lg:w-3/4">
+              <strong>SQL, MongoDB,</strong> PostgreSQL
+            </span>
           </li>
           <li key="tools" className="mt-2 lg:flex lg:justify-between lg:gap-x-4">
             <span className="w-full lg:w-1/4">Tools: </span>
-            <span className="w-full lg:w-3/4">AWS, Git, Webpack, Docker, Jenkins, Jest, Cypress</span>
+            <span className="w-full lg:w-3/4">
+              <strong>AWS, Jenkins, Docker,</strong> Git, Webpack, Jest, Cypress
+            </span>
           </li>
         </ul>
       </div>

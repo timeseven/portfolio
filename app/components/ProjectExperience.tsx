@@ -1,32 +1,44 @@
 import { BsLink45Deg } from "react-icons/bs";
-import Image from "next/image";
-import proj5 from "../../public/instagram.jpg";
-import proj4 from "../../public/ebayclone.jpg";
-import proj3 from "../../public/post.jpg";
-import proj2 from "../../public/homepage.jpg";
-import proj1 from "../../public/crawler.jpg";
+import Image, { StaticImageData } from "next/image";
+import insImage from "../../public/instagram.jpg";
+import ebayImage from "../../public/ebayclone.jpg";
+import movieImage from "../../public/movie.jpg";
+import postImage from "../../public/post.jpg";
+import homepageImage from "../../public/homepage.jpg";
+import crawlerImage from "../../public/crawler.jpg";
+import { useState } from "react";
 
 export default function ProjectExperience() {
   const projData = [
     {
-      id: 5,
+      id: 6,
       projectName: "Instagram Clone",
       projectIntro: `Developed a mobile-first responsive social media application to allow users to register, login, reset password, and use various features such as uploading pictures and videos, following other users, commenting and liking
         on posts, editing profile, and sending real-time messages, etc.`,
       githubLink: [{ name: "Github Repo", link: "https://github.com/timeseven/instagram-clone" }],
       demoLink: "http://ec2-54-66-16-198.ap-southeast-2.compute.amazonaws.com/",
       skills: ["TypeScript", "React.js", "MongoDB", "Express", "Tailwind CSS", "AWS"],
-      projectImg: proj5,
+      projectImg: insImage,
     },
     {
-      id: 4,
+      id: 5,
       projectName: "Ebay Clone",
       projectIntro:
         "Built an Ebay clone website to allow users to login, browse products, add products to cart, add/modify address, checkout and show purchased orders.",
       githubLink: [{ name: "Github Repo", link: "https://github.com/timeseven/ebay-clone" }],
       demoLink: "https://even-ebay-clone.vercel.app/",
       skills: ["Next.js", "React.js", "Prisma", "PostgreSQL", "Supabase", "Stripe"],
-      projectImg: proj4,
+      projectImg: ebayImage,
+    },
+    {
+      id: 4,
+      projectName: "Movie Gallery App",
+      projectIntro:
+        "Developed a react native application that allows users to browse and search movies, check the movie's detailsand its trailer.",
+      githubLink: [{ name: "Github Repo", link: "https://github.com/timeseven/movie-gallery" }],
+      demoLink: "http://ec2-3-27-250-91.ap-southeast-2.compute.amazonaws.com/",
+      skills: ["React Native", "TypeScript", "GraphQL", "AWS", "Jenkins", "Docker"],
+      projectImg: movieImage,
     },
     {
       id: 3,
@@ -36,7 +48,7 @@ export default function ProjectExperience() {
       githubLink: [{ name: "Github Repo", link: "https://github.com/timeseven/easy-post" }],
       demoLink: "https://easy-post-eosin.vercel.app/",
       skills: ["Next.js", "Tanstack", "Prisma", "PostgreSQL", "Next Auth"],
-      projectImg: proj3,
+      projectImg: postImage,
     },
     {
       id: 2,
@@ -46,7 +58,7 @@ export default function ProjectExperience() {
       githubLink: [{ name: "Github Repo", link: "https://github.com/timeseven/press-admin" }],
       demoLink: "https://press-admin.netlify.app/",
       skills: ["React", "React Router", "Redux", "Ant Design"],
-      projectImg: proj2,
+      projectImg: homepageImage,
     },
     {
       id: 1,
@@ -59,7 +71,7 @@ export default function ProjectExperience() {
       ],
       demoLink: "",
       skills: ["React", "TypeScript", "Node.js", "RESTful APIs", "Express", "Echarts"],
-      projectImg: proj1,
+      projectImg: crawlerImage,
     },
   ];
   return (
@@ -68,8 +80,17 @@ export default function ProjectExperience() {
       <div className="flex justify-between flex-col p-5 mt-10 sm:mx-[5.55555%] xl:mx-[11.1111%]">
         {projData.map((item) => {
           return (
-            <div key={item.id} className="flex sm:justify-between items-center flex-col pb-10 md:flex-row-reverse">
-              <div className="w-full md:w-2/5 lg:pr-[5%] flex flex-col">
+            <div key={item.id} className="flex sm:justify-between items-center flex-col pb-10 md:flex-row">
+              {item.projectImg && (
+                <a
+                  href={item.demoLink || item.githubLink[0].link}
+                  target="_blank"
+                  className="w-full mt-10 mb-0 md:w-2/5 md:mr-7 md:mt-0 md:mb-0"
+                >
+                  <Image src={item.projectImg} alt="project1" width={1080} height={717} sizes="100vh" />
+                </a>
+              )}
+              <div className="w-full md:w-3/5 lg:pr-[5%] flex flex-col">
                 <h2 className="mt-0 text-center md:text-left text-2xl leading-7 md:text-[32px] md:leading-tight font-extrabold mb-4 text-gray-900 dark:text-white">
                   {item.projectName}
                 </h2>
@@ -125,11 +146,6 @@ export default function ProjectExperience() {
                   </div>
                 )}
               </div>
-              {item.projectImg && (
-                <div className="w-full mt-10 mb-0 md:w-1/2 md:mt-0 md:mb-0">
-                  <Image src={item.projectImg} alt="project1" width={1080} height={717} sizes="100vh" />
-                </div>
-              )}
             </div>
           );
         })}

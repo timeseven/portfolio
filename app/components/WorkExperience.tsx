@@ -1,6 +1,7 @@
 export default function WorkExperience() {
   const wData = [
     {
+      id: 1,
       date: "Jul.2021 - Oct.2022",
       company: "EVENEN PTY LTD",
       position: "Full Stack Developer/Director",
@@ -8,6 +9,7 @@ export default function WorkExperience() {
       to create and access database.`,
     },
     {
+      id: 2,
       date: "Aug.2018 - Jun.2020",
       company: "XINSHENGSHI NETWORK TECHNOLOGY",
       position: "Front End Developer",
@@ -15,6 +17,7 @@ export default function WorkExperience() {
       success, managed daily site maintenance, and used Gitlab for workflow and version control.`,
     },
     {
+      id: 3,
       date: "Jul.2015 - Dec.2016",
       company: "AUTO-ID LABS",
       position: "Embedded Systems Technician",
@@ -26,7 +29,7 @@ export default function WorkExperience() {
     <section className="bg-no-repeat bg-cover bg-center">
       <div className="text-4xl text-center font-extrabold text-gray-900 dark:text-gray-100">Work Experience💼</div>
       {wData.map((item) => (
-        <div className="px-5 sm:mx-[5.55555%] xl:mx-[11.1111%] pt-12 pb-12">
+        <div key={item.id} className="px-5 sm:mx-[5.55555%] xl:mx-[11.1111%] pt-12 pb-12">
           <div className="mb-4">
             <div className="flex justify-center items-center">
               <span className="text-lg font-extrabold uppercase inline-block min-w-[120px] text-center text-sky-500 dark:text-sky-400">
@@ -42,7 +45,7 @@ export default function WorkExperience() {
               {item.position}
             </h2>
           </div>
-          <p className="text-lg max-w-5xl mx-auto text-left leading-6 text-gray-700 dark:text-white">
+          <p className="text-lg max-w-3xl mx-auto text-left leading-6 text-gray-700 dark:text-white">
             {item.description}
           </p>
         </div>
