@@ -95,12 +95,7 @@ export default function ProjectExperience() {
       <div className="flex justify-between flex-col p-5 md:mt-10 sm:mx-[5.55555%] xl:mx-[11.1111%]">
         {projData.map((item) => {
           return (
-            <div
-              key={item.id}
-              className={`mt-2 flex sm:justify-between items-center flex-col pb-10 ${
-                item.id % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              }`}
-            >
+            <div key={item.id} className={`mt-2 flex sm:justify-between items-center flex-col pb-10 md:flex-row`}>
               {item.projectImg && (
                 <a
                   href={item.demoLink || item.githubLink[0].link}
@@ -189,7 +184,7 @@ export default function ProjectExperience() {
                           target="_blank"
                           title={git.name}
                         >
-                          <BsGithub className="absolute top-2 left-9 h-8 w-8" />
+                          <BsGithub className="absolute top-1/2 left-1/2 -translate-x-4 -translate-y-4 h-8 w-8" />
                         </a>
                       );
                     })}
