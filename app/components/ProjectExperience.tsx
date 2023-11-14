@@ -92,10 +92,15 @@ export default function ProjectExperience() {
   return (
     <section className="bg-no-repeat bg-cover bg-center">
       <div className="text-4xl text-center font-extrabold text-gray-900 dark:text-gray-100">My Coding Projects🚀</div>
-      <div className="flex justify-between flex-col p-5 mt-10 sm:mx-[5.55555%] xl:mx-[11.1111%]">
+      <div className="flex justify-between flex-col p-5 md:mt-10 sm:mx-[5.55555%] xl:mx-[11.1111%]">
         {projData.map((item) => {
           return (
-            <div key={item.id} className="flex sm:justify-between items-center flex-col pb-10 md:flex-row">
+            <div
+              key={item.id}
+              className={`mt-2 flex sm:justify-between items-center flex-col pb-10 ${
+                item.id % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              }`}
+            >
               {item.projectImg && (
                 <a
                   href={item.demoLink || item.githubLink[0].link}
