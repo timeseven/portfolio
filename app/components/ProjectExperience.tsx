@@ -49,7 +49,7 @@ export default function ProjectExperience() {
       id: 4,
       projectName: "Movie Gallery App",
       projectIntro:
-        "Developed a react native application that allows users to browse and search movies, check the movie's detailsand its trailer.",
+        "Developed a react native application that allows users to browse and search movies, check the movie's details and its trailer.",
       githubLink: [{ name: "Github Repo", link: "https://github.com/timeseven/movie-gallery" }],
       demoLink: "http://ec2-3-27-250-91.ap-southeast-2.compute.amazonaws.com/",
       skills: ["React Native", "TypeScript", "GraphQL", "AWS", "Jenkins", "Docker"],
