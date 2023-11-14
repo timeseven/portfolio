@@ -100,13 +100,17 @@ export default function ProjectExperience() {
                 <a
                   href={item.demoLink || item.githubLink[0].link}
                   target="_blank"
-                  className="h-full mt-10 mb-0 max-w-[700px] md:w-1/2 md:mr-7 md:mt-0 md:mb-0 ring-4 ring-black rounded-lg overflow-hidden"
+                  className={`h-full mt-10 mb-0 ${
+                    item.id === 4 ? "max-w-[300px] max-h-[650px] mx-auto" : "max-w-[700px]"
+                  } md:w-1/2 md:mr-7 md:mt-0 md:mb-0 ring-4 ring-black rounded-lg overflow-hidden`}
                   title={item.demoLink || item.githubLink[0].link}
                 >
                   <Image
                     src={item.projectImg}
                     alt="project1"
-                    className="py-2 aspect-video object-cover object-center"
+                    className={`${item.id === 4 ? "aspect[1/4]" : "aspect-[1.5/1]"} object-cover ${
+                      item.id === 1 ? "object-center" : "object-left-top"
+                    }`}
                     sizes="100vw"
                   />
                 </a>
