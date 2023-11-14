@@ -2,7 +2,7 @@ export default function Education() {
   return (
     <section className="bg-no-repeat bg-cover bg-center">
       <div className="text-4xl text-center font-extrabold text-gray-900 dark:text-gray-100">Education📕</div>
-      <div className="px-5 sm:mx-[5.55555%] xl:mx-[11.1111%] pt-12 pb-12">
+      <div className="px-4 sm:mx-[5.55555%] xl:mx-[11.1111%] pt-12 pb-12">
         <div className="px-5">
           <div className="mb-4">
             <div className="flex justify-center items-center">

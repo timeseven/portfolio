@@ -29,7 +29,7 @@ export default function WorkExperience() {
     <section className="bg-no-repeat bg-cover bg-center">
       <div className="text-4xl text-center font-extrabold text-gray-900 dark:text-gray-100">Work Experience💼</div>
       {wData.map((item) => (
-        <div key={item.id} className="px-5 sm:mx-[5.55555%] xl:mx-[11.1111%] pt-12 pb-12">
+        <div key={item.id} className="px-4 sm:mx-[5.55555%] xl:mx-[11.1111%] pt-12 pb-12">
           <div className="mb-4">
             <div className="flex justify-center items-center">
               <span className="text-lg font-extrabold uppercase inline-block min-w-[120px] text-center text-sky-500 dark:text-sky-400">

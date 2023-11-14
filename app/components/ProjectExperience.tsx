@@ -1,17 +1,17 @@
-import { BsLink45Deg } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 import Image, { StaticImageData } from "next/image";
 import insImage from "../../public/instagram.jpg";
+import petImage from "../../public/evenenpets.jpg";
 import ebayImage from "../../public/ebayclone.jpg";
 import movieImage from "../../public/movie.jpg";
 import postImage from "../../public/post.jpg";
 import homepageImage from "../../public/homepage.jpg";
 import crawlerImage from "../../public/crawler.jpg";
-import { useState } from "react";
 
 export default function ProjectExperience() {
   const projData = [
     {
-      id: 6,
+      id: 7,
       projectName: "Instagram Clone",
       projectIntro: `Developed a mobile-first responsive social media application to allow users to register, login, reset password, and use various features such as uploading pictures and videos, following other users, commenting and liking
         on posts, editing profile, and sending real-time messages, etc.`,
@@ -19,6 +19,21 @@ export default function ProjectExperience() {
       demoLink: "http://ec2-54-66-16-198.ap-southeast-2.compute.amazonaws.com/",
       skills: ["TypeScript", "React.js", "MongoDB", "Express", "Tailwind CSS", "AWS"],
       projectImg: insImage,
+    },
+    {
+      id: 6,
+      projectName: "E-commerce Website + Admin Dashboard(CMS)",
+      projectIntro: `Designed an E-commerce website to allow customers to browse products in different categories, add/remove
+        products to/from cart, checkout using Stripe, and show purchased orders. Also, An admin dashboard is
+        available for various features such as creating the corresponding dashboard for the store, monitoring the sales
+        and orders info of the store, and adding/updating/removing billboards, categories and products for it.`,
+      githubLink: [
+        { name: "Github Store Repo", link: "https://github.com/timeseven/ecommerce-store" },
+        { name: "Github Dashboard Repo", link: "https://github.com/timeseven/ecommerce-admin" },
+      ],
+      demoLink: "https://ecommerce-store-gamma-snowy.vercel.app/",
+      skills: ["Next.js", "Headless UI", "Prisma", "MySQL", "Tailwind CSS", "Stripe"],
+      projectImg: petImage,
     },
     {
       id: 5,
@@ -85,19 +100,25 @@ export default function ProjectExperience() {
                 <a
                   href={item.demoLink || item.githubLink[0].link}
                   target="_blank"
-                  className="w-full mt-10 mb-0 md:w-2/5 md:mr-7 md:mt-0 md:mb-0"
+                  className="h-full mt-10 mb-0 max-w-[700px] md:w-1/2 md:mr-7 md:mt-0 md:mb-0 ring-4 ring-black rounded-lg overflow-hidden"
+                  title={item.demoLink || item.githubLink[0].link}
                 >
-                  <Image src={item.projectImg} alt="project1" width={1080} height={717} sizes="100vh" />
+                  <Image
+                    src={item.projectImg}
+                    alt="project1"
+                    className="py-2 aspect-video object-cover object-center"
+                    sizes="100vw"
+                  />
                 </a>
               )}
-              <div className="w-full md:w-3/5 lg:pr-[5%] flex flex-col">
+              <div className="w-full mt-5 md:w-1/2 lg:pr-[5%] flex flex-col">
                 <h2 className="mt-0 text-center md:text-left text-2xl leading-7 md:text-[32px] md:leading-tight font-extrabold mb-4 text-gray-900 dark:text-white">
                   {item.projectName}
                 </h2>
                 <p className="leading-7 mb-3 text-left text-xl md:leading-8 text-gray-700 dark:text-white">
                   {item.projectIntro}
                 </p>
-                {item.githubLink &&
+                {/* {item.githubLink &&
                   item.githubLink.map((git) => {
                     return (
                       <h2 key={git.name} className="flex justify-start text-xl text-gray-700 dark:text-gray-100">
@@ -107,9 +128,9 @@ export default function ProjectExperience() {
                         </a>
                       </h2>
                     );
-                  })}
+                  })} */}
                 {item.skills.length > 0 && (
-                  <div className="mt-4 grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-1">
+                  <div className="mt-4 grid grid-cols-2 gap-x-10 md:gap-x-8 lg:gap-x-4 gap-y-1">
                     {item.skills.map((skill) => {
                       return (
                         <div key={skill} className="flex justify-center md:justify-start items-center text-lg">
@@ -138,13 +159,32 @@ export default function ProjectExperience() {
                     })}
                   </div>
                 )}
-                {item.demoLink && (
-                  <div className="mt-4">
-                    <a href={item.demoLink} target="_blank">
-                      <button className="bg-sky-500 py-2 px-4 rounded-md">View Demo</button>
+                <div className="flex items-center justify-start gap-x-8 mt-4">
+                  {item.demoLink && (
+                    <a
+                      className="font-semibold h-12 w-28 p-3 bg-sky-500 text-center rounded-full hover:scale-110"
+                      href={item.demoLink}
+                      target="_blank"
+                      title={item.demoLink}
+                    >
+                      Demo
                     </a>
-                  </div>
-                )}
+                  )}
+                  {item.githubLink &&
+                    item.githubLink.map((git) => {
+                      return (
+                        <a
+                          key={git.link}
+                          className="relative h-12 w-28 p-3 bg-neutral-200 border rounded-full hover:scale-110"
+                          href={git.link}
+                          target="_blank"
+                          title={git.name}
+                        >
+                          <BsGithub className="absolute top-2 left-9 h-8 w-8" />
+                        </a>
+                      );
+                    })}
+                </div>
               </div>
             </div>
           );

@@ -31,7 +31,7 @@ export default function Summary({ darkMode, setDarkMode }: SummaryProps) {
           </li>
         </ul>
       </nav>
-      <div className="text-center p-10">
+      <div className="text-center p-4">
         <h2 className="text-5xl py-2 text-cyan-600 dark:text-purple-600 font-medium md:text-6xl">Even Qian</h2>
         <h3 className="text-2xl py-2 text-gray-800 dark:text-gray-100">Full Stack Software Developer</h3>
         <p className="text-xl max-w-xl mx-auto text-left py-5 leading-8  text-gray-800 dark:text-gray-100">
